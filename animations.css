@@ -1,0 +1,77 @@
+/* ═══════════════════════════════════════
+   BYTE — animations.css
+   ═══════════════════════════════════════ */
+
+/* ── HERO ENTRANCE — change delay values to adjust timing ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.hero-badge { animation: fadeUp 0.8s 0.1s both; }
+h1          { animation: fadeUp 0.8s 0.2s both; }
+.hero-desc  { animation: fadeUp 0.8s 0.3s both; }
+.hero-btns  { animation: fadeUp 0.8s 0.4s both; }
+.hero-stats { animation: fadeUp 0.8s 0.5s both; }
+.hero-phone { animation: fadeUp 0.9s 0.4s both; }
+
+/* ── PHONE FLOAT — change duration to speed up/slow down ── */
+@keyframes phoneFloat {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-10px); }
+}
+.phone-shell { animation: phoneFloat 6s ease-in-out infinite; }
+
+/* ── BADGE DOT PULSE ── */
+@keyframes pulse {
+  0%, 100% { opacity: 1;   transform: scale(1);   }
+  50%       { opacity: 0.5; transform: scale(1.4); }
+}
+.dot { animation: pulse 2s infinite; }
+
+/* ── GRID DRIFT — change duration to speed up/slow down ── */
+@keyframes gridDrift {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(64px); }
+}
+.hero-grid { animation: gridDrift 24s linear infinite; }
+
+/* ── TICKER — change duration to speed up/slow down ── */
+@keyframes tick {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.ticker { animation: tick 30s linear infinite; }
+.ticker:hover { animation-play-state: paused; }
+
+/* ── LAUNCH BUTTON GLOW ── */
+@keyframes launchGlow {
+  0%, 100% { box-shadow: 0 0 0 0   rgba(74,222,128,0);    }
+  50%       { box-shadow: 0 0 0 14px rgba(74,222,128,0.12); }
+}
+.btn-launch { animation: launchGlow 3s ease-in-out infinite; }
+
+/* ── SYMBIOSIS ARROWS ── */
+@keyframes arrowPulse {
+  0%, 100% { transform: translateX(0);  opacity: 0.6; }
+  50%       { transform: translateX(4px); opacity: 1;   }
+}
+.sym-arrow { animation: arrowPulse 2s ease-in-out infinite; }
+
+/* ── FLOATING PARTICLES ── */
+@keyframes floatUp {
+  0%   { opacity: 0;    transform: translateY(0)      scale(0.5); }
+  20%  { opacity: 0.4; }
+  80%  { opacity: 0.15; }
+  100% { opacity: 0;    transform: translateY(-120px) scale(1);   }
+}
+.particle { animation: floatUp var(--dur, 8s) var(--delay, 0s) infinite ease-in-out; }
+
+/* ── BAR FILL TRANSITION ── */
+.bar-fill { transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1); }
+
+/* ── CARD HOVER TRANSITIONS ── */
+.step, .feat, .info-card, .vc { transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease, opacity 0.7s ease; }
+.step-stripe { transform: scaleX(0); transform-origin: left; transition: transform 0.35s ease; }
+.step::after { transition: opacity 0.35s ease; }
+.launch-arrow { transition: transform 0.2s ease; }
+nav { transition: padding 0.4s ease, background 0.4s ease; }

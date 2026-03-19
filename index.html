@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Byte — Smart Food. Smarter You.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="animations.css"/>
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav id="nav">
+    <a class="nav-logo" href="#">
+      <img src="assets/logo.png" alt="Byte logo" class="nav-logo-img"/>
+      <span class="wordmark">Byte</span>
+    </a>
+    <div class="nav-links">
+      <a href="#how">How it works</a>
+      <a href="#about">About Byte</a>
+      <a href="#score">Byte Score</a>
+      <a href="#vendors">Vendors</a>
+    </div>
+    <button class="nav-pill" onclick="scrollTo('webapp')">Launch app →</button>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="particles" id="particles"></div>
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="hero-badge"><span class="dot"></span> Now live at BAC campus — Gaborone</div>
+        <h1>
+          Healthy food,<br>
+          one <span class="h1-accent">Byte</span> at a time.
+          <span class="h1-sub">Smart food. Smart for you.</span>
+        </h1>
+        <p class="hero-desc">Byte connects you to curated healthy meals from local vendors — delivered fast, priced smart, and scored for nutrition. No junk. No guessing. Just good food.</p>
+        <div class="hero-btns">
+          <button class="btn-green" onclick="scrollTo('about')">Learn about Byte →</button>
+          <button class="btn-ghost" onclick="scrollTo('webapp')">Go to app</button>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><div class="stat-n">114+</div><div class="stat-l">Healthy meals</div></div>
+          <div class="stat"><div class="stat-n">12+</div><div class="stat-l">Local vendors</div></div>
+          <div class="stat"><div class="stat-n">25%</div><div class="stat-l">Student discount</div></div>
+        </div>
+      </div>
+      <div class="hero-phone">
+        <div class="phone-shell">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="p-status"><span>9:41</span><span>●●●</span></div>
+            <div class="p-head">
+              <div class="p-name">Good morning, Kabo 👋</div>
+              <div class="p-sub">What are you eating today?</div>
+            </div>
+            <div class="p-daily">
+              <div class="p-daily-t">Daily Byte 🌿</div>
+              <div class="p-daily-s">Sefalana Deli · 25% off today</div>
+              <div class="p-daily-e">🥗</div>
+              <div class="p-daily-p">Grilled chicken salad · BWP 48</div>
+              <div class="p-cta">ORDER NOW</div>
+            </div>
+            <div class="p-meals">
+              <div class="p-mc"><div class="p-mc-e">🌯</div><div class="p-mc-n">Veggie Wrap</div><div class="p-mc-p">BWP 38</div></div>
+              <div class="p-mc"><div class="p-mc-e">🍱</div><div class="p-mc-n">Power Bowl</div><div class="p-mc-p">BWP 62</div></div>
+              <div class="p-mc"><div class="p-mc-e">🥤</div><div class="p-mc-n">Smoothie</div><div class="p-mc-p">BWP 28</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="aDOlC2_tmRyUCsC5fT6L1";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+
+  <!-- ── TICKER ── -->
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <div class="tick-item"><span class="em">🥗</span> Grilled Chicken Salad <span class="em">· Score 9.1</span></div><div class="tick-dot"></div>
+      <div class="tick-item"><span class="em">🌯</span> Veggie Protein Wrap <span class="em">· Score 8.7</span></div><div class="tick-dot"></div>
+      <div class="tick-item"><span class="em">🍱</span> Quinoa Power Bowl <span class="em">· Score 9.4</span></div><div class="tick-dot"></div>
+      <div class="tick-item"><span class="em">🥤</span> Green Detox Smoothie <span class="em">· Score 8.9</span></div><div class="tick-dot"></div>
+      <div class="tick-item"><span class="em">🫙</span> Wholefood Rice Bowl <span class="em">· Score 9.0</span></div><div class="tick-dot"></div>
+      <div class="tick-item"><span class="em">🥗</span> Grilled Chicken Salad <span class="em">· Score 9.1</span></div><div class="tick-dot"></div>
+      <div class="tick-item"><span class="em">🌯</span> Veggie Protein Wrap <span class="em">· Score 8.7</span></div><div class="tick-dot"></div>
+      <div class="tick-item"><span class="em">🍱</span> Quinoa Power Bowl <span class="em">· Score 9.4</span></div><div class="tick-dot"></div>
+      <div class="tick-item"><span class="em">🥤</span> Green Detox Smoothie <span class="em">· Score 8.9</span></div><div class="tick-dot"></div>
+      <div class="tick-item"><span class="em">🫙</span> Wholefood Rice Bowl <span class="em">· Score 9.0</span></div><div class="tick-dot"></div>
+    </div>
+  </div>
+
+  <!-- ── HOW IT WORKS ── -->
+  <div class="sec" id="how">
+    <div class="wrap">
+      <div class="eyebrow reveal">How it works</div>
+      <div class="sec-title reveal">Four steps to a smarter meal</div>
+      <div class="steps">
+        <div class="step reveal"><div class="step-stripe"></div><div class="step-icon">🔍</div><div class="step-num">STEP 01</div><div class="step-t">Browse healthy options</div><div class="step-d">Every meal is pre-screened and given a Byte Score based on nutritional value. No junk food, ever.</div></div>
+        <div class="step reveal"><div class="step-stripe"></div><div class="step-icon">🎓</div><div class="step-num">STEP 02</div><div class="step-t">Verify student status</div><div class="step-d">Upload your student ID once. Unlock sponsor-funded discounts — automatically applied at checkout.</div></div>
+        <div class="step reveal"><div class="step-stripe"></div><div class="step-icon">🛵</div><div class="step-num">STEP 03</div><div class="step-t">Get it delivered</div><div class="step-d">Delivery via courier partners or collect at a campus pickup point. Real-time tracking included.</div></div>
+        <div class="step reveal"><div class="step-stripe"></div><div class="step-icon">⭐</div><div class="step-num">STEP 04</div><div class="step-t">Earn Byte Points</div><div class="step-d">Every order earns points. Redeem them for free meals and exclusive deals from our vendors.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── INFORMATIVE / ABOUT ── -->
+  <div class="info-sec" id="about">
+    <div class="info-inner">
+      <div class="info-header reveal">
+        <div class="eyebrow">About Byte</div>
+        <div class="sec-title">Everything you need to know<br>before your first order.</div>
+        <p>Byte isn't just a food delivery app. It's a health-first platform built specifically for anyone anywhere — combining smart nutrition filtering, real-time vendor data, and a student discount model that actually works.</p>
+      </div>
+
+      <div class="info-cards">
+        <div class="info-card reveal">
+          <div class="info-card-num">01</div>
+          <div class="info-icon">🎯</div>
+          <div class="info-card-t">The Problem We're Solving</div>
+          <div class="info-card-d">Students want to eat healthily but face two barriers: price and convenience. Campus cafeterias are expensive. Fast food is cheap but nutritionally empty. Byte closes that gap. Healthy food at student prices, delivered to your campus.</div>
+          <span class="info-card-tag">The gap we fill</span>
+        </div>
+        <div class="info-card reveal">
+          <div class="info-card-num">02</div>
+          <div class="info-icon">📱</div>
+          <div class="info-card-t">How the Platform Works</div>
+          <div class="info-card-d">Byte aggregates healthy meals from partner vendors into one place. Users browse, order, and track deliveries in one platform. Every meal is screened and scored. Discounts apply automatically for verified students.</div>
+          <span class="info-card-tag">Platform model</span>
+        </div>
+        <div class="info-card reveal">
+          <div class="info-card-num">03</div>
+          <div class="info-icon">💸</div>
+          <div class="info-card-t">How the Pricing Works</div>
+          <div class="info-card-d">Byte earns a 12% commission from the vendor — not the student. The student discount is co-funded by sponsors who pay for visibility on the platform. Students save money, vendors gain reach, sponsors access the student market.</div>
+          <span class="info-card-tag">Win-win model</span>
+        </div>
+      </div>
+
+      <!-- Symbiosis diagram -->
+      <div class="symbiosis reveal">
+        <div class="sym-box">
+          <div class="sym-emoji">🏪</div>
+          <div class="sym-t">Vendor</div>
+          <div class="sym-d">Shares menu database with Byte. Gains customers without building their own app.</div>
+        </div>
+        <div class="sym-arrow">⇄</div>
+        <div class="sym-box sym-center">
+          <div class="sym-emoji">⚡</div>
+          <div class="sym-t">Byte Platform</div>
+          <div class="sym-d">Aggregates vendor data into a live health-filtered catalogue. Handles orders, payments and delivery.</div>
+        </div>
+        <div class="sym-arrow">⇄</div>
+        <div class="sym-box">
+          <div class="sym-emoji">🎓</div>
+          <div class="sym-t">Student</div>
+          <div class="sym-d">Gets a curated healthy menu, automatic student discount, and fast delivery.</div>
+        </div>
+        <div class="sym-arrow">⇄</div>
+        <div class="sym-box">
+          <div class="sym-emoji">🤝</div>
+          <div class="sym-t">Sponsor</div>
+          <div class="sym-d">Co-funds the student discount in exchange for brand visibility to an engaged student audience.</div>
+        </div>
+      </div>
+
+      <!-- Launch CTA -->
+      <div class="launch-cta reveal" id="webapp">
+        <h3>Ready to try Byte?</h3>
+        <p>You've seen how it works. Now experience it. Browse healthy meals near your campus, verify your student status, and place your first order — all in under two minutes.</p>
+        <button class="btn-launch" onclick="alert('Web app coming soon! We are onboarding vendors now. Drop your email to get early access.')">
+          Launch the Byte app
+          <span class="launch-arrow">→</span>
+        </button>
+        <div class="launch-note">Currently live at BAC · Expanding to all Gaborone campuses and soon after, Botswana as a whole.</div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- ── BYTE SCORE ── -->
+  <div class="sec" id="score">
+    <div class="wrap">
+      <div class="score-layout">
+        <div class="score-l">
+          <div class="eyebrow reveal">Byte Score</div>
+          <div class="sec-title reveal">We score every meal<br>so you don't have to.</div>
+          <p class="reveal">The Byte Score is our proprietary nutrition rating — a simple 1–10 number calculated from protein, fibre, calorie balance, and ingredient quality. Higher score, healthier meal.</p>
+          <p class="reveal">Only meals scoring <strong class="accent-text">7.0 or above</strong> are listed on Byte. We do the filtering so you can just order.</p>
+          <button class="btn-green reveal">How scoring works →</button>
+        </div>
+        <div class="score-r reveal">
+          <div class="score-box">
+            <div class="score-box-t">Sample meal scores</div>
+            <div class="bar-row"><span class="bar-lbl">Grilled Chicken Salad</span><div class="bar-track"><div class="bar-fill" data-w="91"></div></div><span class="bar-n">9.1</span></div>
+            <div class="bar-row"><span class="bar-lbl">Quinoa Power Bowl</span><div class="bar-track"><div class="bar-fill" data-w="94"></div></div><span class="bar-n">9.4</span></div>
+            <div class="bar-row"><span class="bar-lbl">Veggie Protein Wrap</span><div class="bar-track"><div class="bar-fill" data-w="87"></div></div><span class="bar-n">8.7</span></div>
+            <div class="bar-row"><span class="bar-lbl">Green Detox Smoothie</span><div class="bar-track"><div class="bar-fill" data-w="89"></div></div><span class="bar-n">8.9</span></div>
+            <div class="bar-row"><span class="bar-lbl bad-lbl">Typical fast food</span><div class="bar-track"><div class="bar-fill bad" data-w="28"></div></div><span class="bar-n bad">2.8</span></div>
+            <div class="score-note"><span class="check">✓</span> Only scores 7.0+ listed on Byte</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── FEATURES ── -->
+  <div class="sec">
+    <div class="wrap">
+      <div class="eyebrow reveal">Features</div>
+      <div class="sec-title reveal">Built for students.<br>Powered by data.</div>
+      <div class="feat-grid">
+        <div class="feat hot reveal"><div class="feat-icon">🎓</div><div class="feat-t">Student discount, always on</div><div class="feat-d">Verified students get an automatic price reduction on every order, co-funded by brand partners. No voucher codes. No expiry dates. Just a lower price, every time.</div><span class="feat-pill">Up to 25% off</span></div>
+        <div class="feat reveal"><div class="feat-icon">🔄</div><div class="feat-t">Live vendor database sync</div><div class="feat-d">Vendor menus update in real time through our database partnership model. No manual uploads, no stale menus — a true technological symbiosis between Byte and its partners.</div></div>
+        <div class="feat reveal"><div class="feat-icon">📍</div><div class="feat-t">Campus-aware delivery</div><div class="feat-d">Byte knows your campus. Deliveries go to your building or designated pickup point. Partnered with local couriers for fast, reliable fulfilment across Gaborone.</div></div>
+        <div class="feat hot reveal"><div class="feat-icon">⚡</div><div class="feat-t">Byte Points rewards</div><div class="feat-d">Every order earns Byte Points. Accumulate and redeem for free meals or exclusive discounts. The more you eat healthy, the more you save.</div><span class="feat-pill">Loyalty built in</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── VENDORS ── -->
+  <div class="sec" id="vendors">
+    <div class="wrap">
+      <div class="eyebrow reveal">Our vendors</div>
+      <div class="sec-title reveal">Partnered with the best<br>healthy spots near you</div>
+      <div class="vendor-row">
+        <div class="vc reveal"><div class="vc-e">🥗</div><div class="vc-n">Sefalana Deli</div><div class="vc-s">Fresh bowls & salads</div><div class="vc-b">Avg 9.1</div></div>
+        <div class="vc reveal"><div class="vc-e">🌯</div><div class="vc-n">Green Corner</div><div class="vc-s">Wraps & light bites</div><div class="vc-b">Avg 8.7</div></div>
+        <div class="vc reveal"><div class="vc-e">🍱</div><div class="vc-n">Nourish</div><div class="vc-s">Power bowls & grains</div><div class="vc-b">Avg 9.4</div></div>
+        <div class="vc reveal"><div class="vc-e">🥤</div><div class="vc-n">Blend Bar</div><div class="vc-s">Smoothies & juices</div><div class="vc-b">Avg 8.9</div></div>
+        <div class="vc reveal"><div class="vc-e">🫙</div><div class="vc-n">The Grain Store</div><div class="vc-s">Wholefood meals</div><div class="vc-b">Avg 9.0</div></div>
+        <div class="vc add" onclick="alert('Vendor onboarding opening Q2 2026!')"><div class="vc-e">➕</div><div class="vc-n">Your restaurant?</div><div class="vc-s">Join as a vendor</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── FINAL CTA ── -->
+  <div class="cta-section">
+    <div class="cta-box reveal">
+      <div>
+        <div class="cta-t">Ready to eat smarter on campus?</div>
+        <div class="cta-s">Join students at BAC making healthier choices every day. Healthy food shouldn't be a luxury.</div>
+      </div>
+      <div class="cta-btns">
+        <button class="btn-w" onclick="scrollTo('webapp')">Launch the app</button>
+        <button class="btn-ow">Partner with us →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="f-logo">Byte</div>
+    <div class="f-links">
+      <a href="#">About</a>
+      <a href="#">For vendors</a>
+      <a href="#">Careers</a>
+      <a href="#">Privacy</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="f-copy">© 2026 Byte · Smart food. Smart for you.</div>
+  </footer>
+
+  <script src="animations.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
